@@ -1,6 +1,6 @@
 {
   "cognito": {
-    "poolId": "us-east-1:f634ebd3-27ae-49eb-b4cd-2507093eb450"
+    "poolId": "us-west-2:f634ebd3-27ae-49eb-b4cd-2507093eb450"
   },
   "lex": {
     "botName": "WebUiOrderFlowers",

@@ -36,11 +36,11 @@ code repository
 ### Launch
 To launch a stack using the CodeBuild Mode (faster and easier), click this button:
 
-[![cloudformation-launch-stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=lex-web-ui&templateURL=https://s3.amazonaws.com/aws-bigdata-blog/artifacts/aws-lex-web-ui/artifacts/templates/master.yaml)
+[![cloudformation-launch-stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=lex-web-ui&templateURL=https://s3.amazonaws.com/aws-bigdata-blog/artifacts/aws-lex-web-ui/artifacts/templates/master.yaml)
 
 Click the following button to launch a stack using the Pipeline Mode:
 
-[![cloudformation-launch-stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=lex-web-ui&templateURL=https://s3.amazonaws.com/aws-bigdata-blog/artifacts/aws-lex-web-ui/artifacts/templates/master-pipeline.yaml)
+[![cloudformation-launch-stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=lex-web-ui&templateURL=https://s3.amazonaws.com/aws-bigdata-blog/artifacts/aws-lex-web-ui/artifacts/templates/master-pipeline.yaml)
 
 ### CloudFormation Resources
 The CloudFormation stack can create resources in your AWS account
@@ -199,9 +199,9 @@ In this mode, the stack creates a CodeBuild project that creates
 the application configuration and deploys the files to S3.
 
 Click the following CloudFormation button to launch your own copy of
-the sample application stack in the us-east-1 (N. Virginia) AWS region:
+the sample application stack in the us-west-2 (N. Virginia) AWS region:
 
-[![cloudformation-launch-stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=lex-web-ui&templateURL=https://s3.amazonaws.com/aws-bigdata-blog/artifacts/aws-lex-web-ui/artifacts/templates/master.yaml)
+[![cloudformation-launch-stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=lex-web-ui&templateURL=https://s3.amazonaws.com/aws-bigdata-blog/artifacts/aws-lex-web-ui/artifacts/templates/master.yaml)
 
 Once the CloudFormation stack is successfully launched and the status
 of all nested stacks is `CREATE_COMPLETE`, browse to the `CodeBuildUrl`
@@ -241,8 +241,8 @@ To deploy a CloudFormation stack with a working demo of the application,
 follow the steps below:
 
 1. Click the following CloudFormation button to launch your own copy of
-the sample application stack in the us-east-1 (N. Virginia) AWS region:
-[![cloudformation-launch-stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=lex-web-ui&templateURL=https://s3.amazonaws.com/aws-bigdata-blog/artifacts/aws-lex-web-ui/artifacts/templates/master-pipeline.yaml)
+the sample application stack in the us-west-2 (N. Virginia) AWS region:
+[![cloudformation-launch-stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=lex-web-ui&templateURL=https://s3.amazonaws.com/aws-bigdata-blog/artifacts/aws-lex-web-ui/artifacts/templates/master-pipeline.yaml)
 2. You can accept the defaults in the CloudFormation Create Stack Wizard
 up until the last step. At the last step, when prompted to create
 the stack, select the checkmark that says: "I acknowledge that AWS

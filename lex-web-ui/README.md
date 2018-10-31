@@ -49,7 +49,7 @@ You can import the library as a module and use it in your code:
   const lexWebUi = new LexWebUi({
     // pass your own configuration
     cognito: {
-      poolId: 'us-east-1:deadbeef-fade-babe-cafe-0123456789ab',
+      poolId: 'us-west-2:deadbeef-fade-babe-cafe-0123456789ab',
     },
     lex: {
       initialText: 'How can I help you?',
@@ -106,8 +106,8 @@ in your application:
   Vue.use(Vuex);
   Vue.use(Vuetify);
 
-  const poolId = 'us-east-1:deadbeef-cac0-babe-abcd-abcdef01234';
-  const region = 'us-east-1';
+  const poolId = 'us-west-2:deadbeef-cac0-babe-abcd-abcdef01234';
+  const region = 'us-west-2';
   const credentials = new CognitoIdentityCredentials(
     { IdentityPoolId: poolId },
     { region },
@@ -289,7 +289,7 @@ been set to true.
     "poolId": "The-Identity-Pool-Id",
     "appUserPoolClientId": "The-User-Pool-Client-Id ",
     "appUserPoolName": "The-User-Pool-Name",
-    "appDomainName": "TheAppDomainCreated.auth.us-east-1.amazoncognito.com",
+    "appDomainName": "TheAppDomainCreated.auth.us-west-2.amazoncognito.com",
     "appUserPoolIdentityProvider": ""
   },
 ```
@@ -450,7 +450,7 @@ Here's an example of the `config.dev.json` file:
 ```
 {
   "cognito": {
-    "poolId": "us-east-1:deadbeef-cac0-babe-abcd-abcdef01234",
+    "poolId": "us-west-2:deadbeef-cac0-babe-abcd-abcdef01234",
   },
   "lex": {
     "bot": "MyLexBotName",

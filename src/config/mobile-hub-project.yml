@@ -16,7 +16,7 @@ features:
       release: !com.amazonaws.mobilehub.v0.Bucket {}
   sign-in: !com.amazonaws.mobilehub.v0.SignIn {}
 name: lex-web-ui
-region: us-east-1
+region: us-west-2
 uploads:
   - !com.amazonaws.mobilehub.v0.Upload
     fileName: index.html

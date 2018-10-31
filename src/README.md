@@ -441,7 +441,7 @@ and configuration to the chatbot UI component:
     // their values
     var chatbotUiconfig = {
      cognito: {
-       poolId: 'us-east-1:deadbeef-fade-babe-cafe-0123456789ab'
+       poolId: 'us-west-2:deadbeef-fade-babe-cafe-0123456789ab'
      },
      lex: {
         initialText: 'How can I help you?',

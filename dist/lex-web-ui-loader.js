@@ -39063,10 +39063,10 @@ var ConfigLoader = exports.ConfigLoader = function () {
           cognito: {
             poolId: aws_cognito_identity_pool_id,
             // eslint-disable-next-line camelcase
-            region: aws_cognito_region || 'us-east-1'
+            region: aws_cognito_region || 'us-west-2'
           },
           lex: { botName: botName },
-          region: botRegion || 'us-east-1'
+          region: botRegion || 'us-west-2'
         };
 
         var mergedConfig = ConfigLoader.mergeConfig(config, mobileHubConfig);
@@ -39610,8 +39610,8 @@ var FullPageComponentLoader = exports.FullPageComponentLoader = function () {
       });
       var cognitoPoolId = this.config.cognito.poolId;
 
-      var region = this.config.cognito.region || this.config.region || 'us-east-1';
-      var poolName = 'cognito-idp.us-east-1.amazonaws.com/' + this.config.cognito.appUserPoolName;
+      var region = this.config.cognito.region || this.config.region || 'us-west-2';
+      var poolName = 'cognito-idp.us-west-2.amazonaws.com/' + this.config.cognito.appUserPoolName;
       var credentials = void 0;
       if (idtoken) {
         // auth role since logged in
@@ -39736,8 +39736,8 @@ var FullPageComponentLoader = exports.FullPageComponentLoader = function () {
         }
         var cognitoPoolId = _this3.config.cognito.poolId;
 
-        var region = _this3.config.cognito.region || _this3.config.region || 'us-east-1';
-        var poolName = 'cognito-idp.us-east-1.amazonaws.com/' + _this3.config.cognito.appUserPoolName;
+        var region = _this3.config.cognito.region || _this3.config.region || 'us-west-2';
+        var poolName = 'cognito-idp.us-west-2.amazonaws.com/' + _this3.config.cognito.appUserPoolName;
         if (!cognitoPoolId) {
           return reject(new Error('missing cognito poolId config'));
         }
@@ -40387,8 +40387,8 @@ var IframeComponentLoader = exports.IframeComponentLoader = function () {
     value: function updateCredentials() {
       var cognitoPoolId = this.config.cognito.poolId;
 
-      var region = this.config.cognito.region || this.config.region || 'us-east-1';
-      var poolName = 'cognito-idp.us-east-1.amazonaws.com/' + this.config.cognito.appUserPoolName;
+      var region = this.config.cognito.region || this.config.region || 'us-west-2';
+      var poolName = 'cognito-idp.us-west-2.amazonaws.com/' + this.config.cognito.appUserPoolName;
       var credentials = void 0;
       var idtoken = localStorage.getItem('idtokenjwt');
       if (idtoken) {
@@ -40470,8 +40470,8 @@ var IframeComponentLoader = exports.IframeComponentLoader = function () {
         }
         var cognitoPoolId = _this4.config.cognito.poolId;
 
-        var region = _this4.config.cognito.region || _this4.config.region || 'us-east-1';
-        var poolName = 'cognito-idp.us-east-1.amazonaws.com/' + _this4.config.cognito.appUserPoolName;
+        var region = _this4.config.cognito.region || _this4.config.region || 'us-west-2';
+        var poolName = 'cognito-idp.us-west-2.amazonaws.com/' + _this4.config.cognito.appUserPoolName;
         if (!cognitoPoolId) {
           return reject(new Error('missing cognito poolId config'));
         }

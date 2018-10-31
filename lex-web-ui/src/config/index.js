@@ -50,11 +50,11 @@ const configEnvFile = require(`./config.${envShortName}.json`);
 // environment and dynamic configs
 const configDefault = {
   // AWS region
-  region: 'us-east-1',
+  region: 'us-west-2',
 
   cognito: {
     // Cognito pool id used to obtain credentials
-    // e.g. poolId: 'us-east-1:deadbeef-cac0-babe-abcd-abcdef01234',
+    // e.g. poolId: 'us-west-2:deadbeef-cac0-babe-abcd-abcdef01234',
     poolId: '',
   },
 

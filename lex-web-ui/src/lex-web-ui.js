@@ -143,11 +143,11 @@ export class Loader {
 
     const credentials = new CognitoConstructor(
       { IdentityPoolId: mergedConfig.cognito.poolId },
-      { region: mergedConfig.region || 'us-east-1' },
+      { region: mergedConfig.region || 'us-west-2' },
     );
 
     const awsConfig = new AWSConfigConstructor({
-      region: mergedConfig.region || 'us-east-1',
+      region: mergedConfig.region || 'us-west-2',
       credentials,
     });
 

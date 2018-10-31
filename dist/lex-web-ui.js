@@ -10554,11 +10554,11 @@ var configEnvFile = __webpack_require__(344)("./config." + envShortName + '.json
 // environment and dynamic configs
 var configDefault = {
   // AWS region
-  region: 'us-east-1',
+  region: 'us-west-2',
 
   cognito: {
     // Cognito pool id used to obtain credentials
-    // e.g. poolId: 'us-east-1:deadbeef-cac0-babe-abcd-abcdef01234',
+    // e.g. poolId: 'us-west-2:deadbeef-cac0-babe-abcd-abcdef01234',
     poolId: ''
   },
 
@@ -17198,10 +17198,10 @@ var Loader = function Loader() {
     throw new Error('unable to find AWS SDK');
   }
 
-  var credentials = new CognitoConstructor({ IdentityPoolId: mergedConfig.cognito.poolId }, { region: mergedConfig.region || 'us-east-1' });
+  var credentials = new CognitoConstructor({ IdentityPoolId: mergedConfig.cognito.poolId }, { region: mergedConfig.region || 'us-west-2' });
 
   var awsConfig = new AWSConfigConstructor({
-    region: mergedConfig.region || 'us-east-1',
+    region: mergedConfig.region || 'us-west-2',
     credentials: credentials
   });
 
@@ -33354,7 +33354,7 @@ webpackContext.id = 344;
 /* 345 */
 /***/ (function(module, exports) {
 
-module.exports = {"cognito":{"poolId":"us-east-1:f634ebd3-27ae-49eb-b4cd-2507093eb450"},"lex":{"botName":"WebUiOrderFlowers","initialText":"You can ask me for help ordering flowers. Just type \"order flowers\" or click on the mic and say it.","initialSpeechInstruction":"Say 'Order Flowers' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"http://localhost:8080","pageTitle":"Order Flowers Bot","toolbarTitle":"Order Flowers","enableLogin":true},"recorder":{"preset":"speech_recognition"}}
+module.exports = {"cognito":{"poolId":"us-west-2:f634ebd3-27ae-49eb-b4cd-2507093eb450"},"lex":{"botName":"WebUiOrderFlowers","initialText":"You can ask me for help ordering flowers. Just type \"order flowers\" or click on the mic and say it.","initialSpeechInstruction":"Say 'Order Flowers' to get started."},"polly":{"voiceId":"Salli"},"ui":{"parentOrigin":"http://localhost:8080","pageTitle":"Order Flowers Bot","toolbarTitle":"Order Flowers","enableLogin":true},"recorder":{"preset":"speech_recognition"}}
 
 /***/ }),
 /* 346 */

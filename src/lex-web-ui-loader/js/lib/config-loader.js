@@ -141,10 +141,10 @@ export class ConfigLoader {
         cognito: {
           poolId: aws_cognito_identity_pool_id,
           // eslint-disable-next-line camelcase
-          region: aws_cognito_region || 'us-east-1',
+          region: aws_cognito_region || 'us-west-2',
         },
         lex: { botName },
-        region: botRegion || 'us-east-1',
+        region: botRegion || 'us-west-2',
       };
 
       const mergedConfig = ConfigLoader.mergeConfig(config, mobileHubConfig);
